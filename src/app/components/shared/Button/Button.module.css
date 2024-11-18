@@ -1,0 +1,17 @@
+.button {
+  font-family: "MartaPerez";
+  padding: 15px;
+  width: max-content;
+  background-color: transparent;
+  color: white;
+  border: solid 1px white;
+  border-radius: 15px;
+  font-size: 15px;
+}
+.button:hover {
+  text-decoration: underline;
+  background-color: bisque;
+  border: solid 1px black;
+  color: black;
+  cursor: pointer;
+}
