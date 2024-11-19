@@ -15,25 +15,43 @@ const Card = ({ src, alt, title, subtitle, type }: CardProps) => {
             width={400}
           />
           <div className={styles.card__text}>
-            <h2 className={styles.card__title}>
-              <b>{`"${title}"`}</b>
-            </h2>
-            <span className={styles.card__subtitle}>{subtitle}</span>
+            <h4 className={styles.card__title}>{`"${title}"`}</h4>
+            <p className={styles.card__subtitle}>{subtitle}</p>
           </div>
         </div>
       );
-
     case "paar":
-      <div>
-        <p>DOS</p>
-      </div>;
-      break;
+      return (
+        <div className={styles.card}>
+          <Image
+            className={styles.card__image__paar}
+            src={src}
+            alt={alt}
+            height={500}
+            width={650}
+          />
+          <div className={styles.card__text}>
+            <h4 className={styles.card__title}>{`"${title}"`}</h4>
+            <p className={styles.card__subtitle}>{subtitle}</p>
+          </div>
+        </div>
+      );
     case "single":
-      <div>
-        <p>UNO</p>
-      </div>;
-      break;
-
+      return (
+        <div className={styles.card}>
+          <Image
+            className={styles.card__image__single}
+            src={src}
+            alt={alt}
+            height={600}
+            width={1250}
+          />{" "}
+          <div className={styles.card__text}>
+            <h4 className={styles.card__title}>{`"${title}"`}</h4>
+            <p className={styles.card__subtitle}>{subtitle}</p>
+          </div>
+        </div>
+      );
     default:
       break;
   }

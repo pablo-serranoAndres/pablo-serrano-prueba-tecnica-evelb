@@ -1,0 +1,24 @@
+.contactForm {
+  text-align: center;
+}
+.contactForm__form {
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.contactForm__text {
+  width: 90%;
+}
+
+.contactFrom__textarea {
+  width: 90%;
+  height: 300px;
+}
+.contactForm__text,
+.contactFrom__textarea {
+  padding: 15px;
+  border-radius: 10px;
+}

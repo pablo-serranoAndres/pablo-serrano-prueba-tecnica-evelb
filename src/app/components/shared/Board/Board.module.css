@@ -1,0 +1,48 @@
+.exposition__board__cold {
+  background-color: #ffffff;
+  max-width: 100%;
+  height: fit-content;
+  display: flex;
+
+  flex-direction: column;
+  text-align: center;
+  min-height: 100vh;
+}
+.exposition__board__warm {
+  background-color: #fff7f1;
+  max-width: 100%;
+  height: fit-content;
+  display: flex;
+
+  flex-direction: column;
+  text-align: center;
+  min-height: 100vh;
+}
+.exposition__board__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.exposition__cards {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  height: fit-content;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  gap: 50px;
+  flex-direction: row;
+}
+@media (max-width: 697px) {
+  .exposition__board__cold {
+    max-width: 100%;
+  }
+  .exposition__board__warm {
+    max-width: 100%;
+  }
+}

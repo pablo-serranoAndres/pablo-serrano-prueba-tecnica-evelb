@@ -1,12 +1,12 @@
 .button {
   font-family: "MartaPerez";
-  padding: 15px;
-  width: max-content;
+  padding: 20px;
+  width: fit-content;
   background-color: transparent;
   color: white;
   border: solid 1px white;
-  border-radius: 15px;
-  font-size: 15px;
+  border-radius: 35px;
+  font-size: 20px;
 }
 .button:hover {
   text-decoration: underline;

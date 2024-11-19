@@ -1,0 +1,47 @@
+.links {
+  justify-content: center;
+  display: flex;
+  max-width: 100%;
+  padding: 25px;
+  gap: 40px;
+  transition: all 0.3s ease;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000;
+  z-index: 10;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+@media (max-width: 600px) {
+  .links {
+    justify-content: start;
+    gap: 40px;
+  }
+}
